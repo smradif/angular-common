@@ -1,0 +1,24 @@
+<div *ngIf="isLoading">
+  <mat-spinner></mat-spinner>
+</div>
+<app-dialog-title [title]="title"></app-dialog-title>
+<div class="header">
+  <div class="header-item">First Name</div>
+  <div class="header-item">Last Name</div>
+  <div style="width: 50px">
+    <button mat-mini-fab color="accent" (click)="addRandomUser()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>
+<cdk-virtual-scroll-viewport itemSize="50" class="user-viewport">
+  <div *cdkVirtualFor="let user of users;let even=even; let last = last;" class="user-item row"
+    [ngClass]="{'even': even, 'last': last}">
+    <div class="user-name">{{user.firstName}}</div>
+    <div class="user-name">{{user.lastName}}</div>
+
+  </div>
+</cdk-virtual-scroll-viewport>
+<div style="width: 100%">
+  <app-dialog-actions (okOut)="ok()" (cancelOut)="cancel()" okText="Save"></app-dialog-actions>
+</div>

@@ -1,0 +1,9 @@
+<div *ngIf="summary.length > 0">
+    <h2>Wizard summary</h2>
+    <div *ngFor="let sum of summary">
+        <div>Step {{sum.step}} {{sum.value}}</div>
+    </div>
+    <div>
+        <button type="button" mat-raised-button color="primary" (click)="handleClear()">Clear</button>
+    </div>
+</div>

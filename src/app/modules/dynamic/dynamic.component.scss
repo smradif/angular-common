@@ -1,0 +1,18 @@
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+
+    & > button {
+        margin: 5px;
+        height: 100px;
+        width: 220px;
+        font-size: 18px;
+    }
+}
+
+.car-template {
+    margin-top: 20px;
+    text-align: center;
+}

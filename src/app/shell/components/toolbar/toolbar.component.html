@@ -1,0 +1,7 @@
+<mat-toolbar color="primary" class="toolbar">
+    <div class="toolbar-buttons">
+        <span></span>
+        <button *ngFor="let item of navigationItems"  mat-button [matTooltip]="item.tooltip" (click)="navigateTo(item.path)">{{item.title}}</button>
+    </div>
+    <app-theme-manager></app-theme-manager>
+</mat-toolbar>

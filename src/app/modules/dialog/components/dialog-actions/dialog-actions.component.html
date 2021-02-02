@@ -1,0 +1,6 @@
+<div class="actions-container">
+    
+    <span *ngIf="isLoading"><mat-spinner diameter="30" ></mat-spinner></span>
+    <button *ngIf="canCancel" mat-raised-button (click)="cancel()">{{cancelText}}</button>
+    <button mat-raised-button color="primary" (click)="ok()">{{okText}}</button>
+</div>

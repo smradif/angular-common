@@ -1,0 +1,43 @@
+.user-container {
+    padding: 5px;
+}
+
+.header {
+    display: flex;
+    height: 32px;
+}
+
+.header-item {
+    width: 50%;
+    font-weight: 500;
+}
+
+.user-viewport {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 540px;
+    width: 600px;
+}
+
+.user-item {
+    height: 50px;
+    margin: 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.even {
+    background-color: #ebebeb;
+}
+
+.last {
+    border-bottom: 1px solid black;
+}
+
+.user-name {
+    width: 50%;
+    margin-left: 5px;
+}

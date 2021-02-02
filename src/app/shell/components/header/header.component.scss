@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    font-size: 32px;;
+}
+
+.subtitle {
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.header .text-muted {
+    font-size: 65%;
+}

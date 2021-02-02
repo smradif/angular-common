@@ -1,0 +1,15 @@
+<h3>
+    List of components that are created and injected dynamically.
+</h3>
+<div class="buttons-container">
+    <button mat-raised-button type="button" color="primary" (click)="loadMercedes('s-class')">Mercedes S-class</button>
+    <button mat-raised-button type="button" color="primary" (click)="loadMercedes('eqs')">Mercedes EQS</button>
+    <button mat-raised-button type="button" color="accent" (click)="loadTesla('roadster')">Tesla Raodster</button>
+    <button mat-raised-button type="button" color="accent" (click)="loadTesla('cybertruck')">Tesla Cybertruck</button>
+    <button mat-raised-button type="button" color="warn" (click)="loadRangeRover('crossover')">Range Rover Crossover</button>
+    <button mat-raised-button type="button" color="warn" (click)="loadRangeRover('sport')">Range Rover Sport</button>
+</div>
+
+<div class="car-template">
+    <ng-template #dynamic></ng-template>
+</div>

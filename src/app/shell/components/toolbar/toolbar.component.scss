@@ -1,0 +1,11 @@
+.toolbar {
+    display: flex;
+
+    .toolbar-buttons {
+        flex: 2
+    }
+
+    .toolbar-theme {
+        flex: 1l
+    }
+}

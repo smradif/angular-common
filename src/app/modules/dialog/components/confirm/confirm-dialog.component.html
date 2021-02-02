@@ -1,0 +1,8 @@
+<app-dialog-title [title]="title"></app-dialog-title>
+<mat-dialog-content>
+    <div class="dialog-container">{{options.content}}</div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <app-dialog-actions (okOut)="ok()" (cancelOut)="cancel()" okText="Save"></app-dialog-actions>
+</mat-dialog-actions>

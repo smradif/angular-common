@@ -1,0 +1,19 @@
+<h3>
+    {{ 'Translations' | translate }}
+</h3>
+<mat-form-field appearance="fill">
+    <mat-label>{{ 'Select a language' | translate }}</mat-label>
+    <mat-select (selectionChange)="changeLanguage($event.value)" [(ngModel)]="languageCode">
+      <mat-option *ngFor="let lang of languages" [value]="lang.code" >
+        {{lang.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+<div style="text-align: center;">
+    <h2>
+        {{'How to translate your application' | translate}}
+    </h2>
+    <h3>
+        {{'Each language is stored in a separate .json file and saved in: assets/i18n/fr.json' | translate}}
+    </h3>
+</div>

@@ -1,0 +1,44 @@
+.error-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+}
+
+.logo {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    min-height: 141px;
+}
+
+.error-box {
+    width: 50%;
+    min-height: 150px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.generic-error {
+    background-color: #8dc63f;
+    color: white;
+}
+
+.fail-error {
+    background-color: rgb(161, 31, 31);
+    color: white;
+}
+
+.header {
+    font-size: 50px;
+    width: 100%;
+}
+
+.content {
+    font-size: 30px;
+}
